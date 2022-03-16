@@ -1,0 +1,15 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    font-size: 50px;
+    font-family: 'Gill Sans Nova Inline Bold';
+    font-weight: bold;
+}
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
