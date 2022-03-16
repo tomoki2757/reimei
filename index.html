@@ -6,6 +6,40 @@
         <title>REIMEI</title>
         <link rel="stylesheet" href="normalize.css" />
         <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" href="https://use.typekit.net/pom2pvg.css" />
+        <script>
+            (function (d) {
+                var config = {
+                        kitId: "wia0jpf",
+                        scriptTimeout: 3000,
+                        async: true,
+                    },
+                    h = d.documentElement,
+                    t = setTimeout(function () {
+                        h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                    }, config.scriptTimeout),
+                    tk = d.createElement("script"),
+                    f = false,
+                    s = d.getElementsByTagName("script")[0],
+                    a;
+                h.className += " wf-loading";
+                tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+                tk.async = true;
+                tk.onload = tk.onreadystatechange = function () {
+                    a = this.readyState;
+                    if (f || (a && a != "complete" && a != "loaded")) return;
+                    f = true;
+                    clearTimeout(t);
+                    try {
+                        Typekit.load(config);
+                    } catch (e) {}
+                };
+                s.parentNode.insertBefore(tk, s);
+            })(document);
+        </script>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+        </style>
     </head>
 
     <body>
@@ -15,7 +49,9 @@
             <a href="#">Services</a>
             <a href="#">Contact</a>
         </header>
-        <img src="1.svg" alt="" id="logo" />
+        <div class="img">
+            <img src="1.svg" alt="" id="logo" />
+        </div>
         <h1>プログラムで未来を創る</h1>
     </body>
 </html>
