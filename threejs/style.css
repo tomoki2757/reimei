@@ -3,24 +3,34 @@ header {
     justify-content: space-around;
     align-items: center;
     height: 100px;
-    font-family: gill-sans-nova-inline, sans-serif;
-    font-size: 50px;
+    width: 100%;
+    font-family: 'TTNormsPro',sans-serif;
+
     font-weight: 700;
     font-style: normal;
     border: solid 1px black;
 }
-
+.header_box{
+    height: 100%;
+    width: 100%;
+    border: solid 1px black;
+}
 
 a {
+    font-size: 4vw;
+    width: 100%;
     text-decoration: none;
     color: black;
 }
 
 .img {
-    width: 500px;
+    width: 30%;
+    min-width: 100px;
     margin: 100px auto;
 }
-
+img{
+    width: 100%;
+}
 h1 {
     text-align: center;
     font-family: heisei-maru-gothic-std, sans-serif;
