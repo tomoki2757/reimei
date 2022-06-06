@@ -26,15 +26,13 @@ function init() {
 
     // Load GLTF or GLB
     const loader = new THREE.GLTFLoader();
-    const url = '3d/reimeiEarth.glb';
+    const url = '3d/reimeiEarth02.glb';
 
     // window size
     const w_height = window.innerHeight;
 
     let model = null;
-    loader.load(
-        url,
-        function (gltf) {
+    loader.load(url,function (gltf) {
             model = gltf.scene;
             // model.name = "model_with_cloth";
             model.scale.set(100.0, 100.0, 100.0);
