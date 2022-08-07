@@ -34,7 +34,7 @@ function init() {
     loader.load(url,function (gltf) {
             model = gltf.scene;
             // model.name = "model_with_cloth";
-            model.scale.set(10,10,10);
+            model.scale.set(11,11,11);
 
             scene.add(gltf.scene);
 

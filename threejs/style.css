@@ -38,11 +38,11 @@ img{
     text-align: center;
 }
 .heroMessage {
-    font-family: 'ColfaxAI';
-    font-weight: 800;
+    font-family: sans-serif;
+    font-weight: 200;
     font-style: normal;
     color: black;
-    font-size: 6vw;
+    font-size: 4vw;
     display: inline;
     position: relative;
     top: -200px;
@@ -51,3 +51,27 @@ img{
 .herod{
     text-align: center;    
 }
+
+@media screen and (min-width: 600px) {
+    .img {
+        width: 70%;
+        text-align: center;
+        margin: auto;
+    }
+    #main_canvas{
+        height: 800px;
+    }
+
+
+    img{
+        position: relative;
+        top: -600px;
+    
+    }
+    .heroMessage {
+
+        position: relative;
+        top: -600px;
+    }
+}
+    
