@@ -30,7 +30,7 @@ img{
     width: 90%;
     z-index: 999;
     position: relative;
-    top: -300px;
+    top: -200px;
 
 }
 
@@ -45,7 +45,7 @@ img{
     font-size: 6vw;
     display: inline;
     position: relative;
-    top: -100px;
+    top: -200px;
 }
 
 .herod{
