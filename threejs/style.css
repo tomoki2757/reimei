@@ -1,20 +1,22 @@
+
+
 header {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 100px;
     width: 100%;
-    font-family: 'TTNormsPro',sans-serif;
+    font-family: 'ColfaxAI',sans-serif;
 
     font-weight: 700;
     font-style: normal;
-    border: solid 1px black;
 }
-.header_box{
-    height: 100%;
-    width: 100%;
-    border: solid 1px black;
+
+
+#main_canvas{
+    height: 300px;
 }
+
 
 a {
     font-size: 4vw;
@@ -23,17 +25,29 @@ a {
     color: black;
 }
 
-.img {
-    width: 30%;
-    min-width: 100px;
-    margin: 100px auto;
-}
+
 img{
-    width: 100%;
+    width: 90%;
+    z-index: 999;
+    position: relative;
+    top: -300px;
+
 }
-h1 {
+
+.img{
     text-align: center;
-    font-family: heisei-maru-gothic-std, sans-serif;
+}
+.heroMessage {
+    font-family: 'ColfaxAI';
     font-weight: 800;
     font-style: normal;
+    color: black;
+    font-size: 6vw;
+    display: inline;
+    position: relative;
+    top: -100px;
+}
+
+.herod{
+    text-align: center;    
 }

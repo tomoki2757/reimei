@@ -9,15 +9,14 @@ function init() {
     // ウィンドウサイズ設定
     width = document.getElementById('main_canvas').getBoundingClientRect().width;
     height = document.getElementById('main_canvas').getBoundingClientRect().height;
-    renderer.setPixelRatio(1);
+    renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(width, height);
     console.log(window.devicePixelRatio);
     console.log(width + ", " + height);
 
     // シーンを作成
     const scene = new THREE.Scene();
-    scene.background = new THREE.Color( 0x87B8C0 ); // 背景色
-
+    renderer.setClearColor( 0xffffff, 0 );
     // カメラを作成
     camera = new THREE.PerspectiveCamera(45, width / height, 1, 10000);
     camera.position.set(0, 400, -1000);
@@ -35,9 +34,10 @@ function init() {
     loader.load(url,function (gltf) {
             model = gltf.scene;
             // model.name = "model_with_cloth";
-            model.scale.set(100.0, 100.0, 100.0);
-            model.position.set(0, (w_height / 3 * -1), 0);
+            model.scale.set(10,10,10);
+
             scene.add(gltf.scene);
+
 
             // model["test"] = 100;
         },
