@@ -16,7 +16,7 @@ function init() {
 
     // シーンを作成
     const scene = new THREE.Scene();
-    renderer.setClearColor( 0xffffff, 0 );
+    scene.background = new THREE.Color( 000000 ); // 背景色
     // カメラを作成
     camera = new THREE.PerspectiveCamera(45, width / height, 1, 10000);
     camera.position.set(0, 400, -1000);
@@ -34,7 +34,7 @@ function init() {
     loader.load(url,function (gltf) {
             model = gltf.scene;
             // model.name = "model_with_cloth";
-            model.scale.set(11,11,11);
+            model.scale.set(10,10,10);
 
             scene.add(gltf.scene);
 

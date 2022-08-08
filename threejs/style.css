@@ -1,4 +1,6 @@
-
+body{
+    background-color: black;
+}
 
 header {
     display: flex;
@@ -7,31 +9,26 @@ header {
     height: 100px;
     width: 100%;
     font-family: 'ColfaxAI',sans-serif;
-
     font-weight: 700;
     font-style: normal;
 }
 
-
 #main_canvas{
-    height: 400px;
+    height: 300px;
 }
-
 
 a {
     font-size: 4vw;
     width: 100%;
     text-decoration: none;
-    color: black;
+    color: white;
 }
-
 
 img{
     width: 90%;
     z-index: 999;
     position: relative;
     top: -200px;
-
 }
 
 .img{
@@ -41,7 +38,7 @@ img{
     font-family: sans-serif;
     font-weight: 200;
     font-style: normal;
-    color: black;
+    color: white;
     font-size: 4vw;
     display: inline;
     position: relative;
