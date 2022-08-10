@@ -65,24 +65,24 @@ function init() {
         renderer.render(scene, camera);
         requestAnimationFrame(tick);
     }
-}
 
+    animate();
+    
     function animate() {
         // window.requestAnimationFrame:再描画のタイミングで指定した関数が呼び出される
         // https://developer.mozilla.org/ja/docs/Web/API/Window/requestAnimationFrame
         requestAnimationFrame( animate );
         render();
     }
-
+    
     function render() {
-
-        model.rotation.x += 0.01;	// x軸方向に回転
-        model.rotation.y += 0.01;	// y軸方向に回転
-        model.rotation.z += 0.01;	// z軸方向に回転
-
-
+    
+        model.rotation.y += 0.005;	// y軸方向に回転
+    
         // 再描画
         renderer.render(scene, camera); 
-
+    
     }
+}
+
 
