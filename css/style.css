@@ -47,6 +47,11 @@ header {
     text-align: center;
 }
 
+.white{
+    color: white;
+    text-align: center;
+    font-size: large;
+}
 
 @media screen and (min-width: 768px) {
     .headerLogo {

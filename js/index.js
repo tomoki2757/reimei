@@ -43,7 +43,6 @@ function init() {
     renderer.gammaOutput = true;
     renderer.gammaFactor = 2.2;
 
-
     // 平行光源
     const light = new THREE.DirectionalLight(0xFFFFFF);
     light.intensity = 1; // 光の強さ
@@ -67,7 +66,7 @@ function init() {
     }
 
     animate();
-    
+
     function animate() {
         // window.requestAnimationFrame:再描画のタイミングで指定した関数が呼び出される
         // https://developer.mozilla.org/ja/docs/Web/API/Window/requestAnimationFrame
