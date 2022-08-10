@@ -4,8 +4,8 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>REIMEI</title>
-        <link rel="stylesheet" href="normalize.css" />
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link rel="stylesheet" href="https://use.typekit.net/pom2pvg.css" />
         <!-- three.jsを読み込む -->
         <script src="js/threejs/three.min.js"></script>
@@ -15,29 +15,26 @@
         <script src="js/index.js"></script>
     </head>
     <body>
-        <div class="container">
-            <div class="img">
-                <a href="/"><img src="reimeiLogoWhite.png" alt="" id="logo" /></a>
+        <div class="headerLogo">
+            <a href="/"><img src="img/reimeiLogoWhite.png" alt="" class="logoimg" /></a>
+        </div>
+        <header>
+            <div class="headerBox">
+                <a class="headerLink" href="#">About</a>
             </div>
-            <header>
-                <div class="header_box">
-                    <a href="#">About</a>
-                </div>
-                <div class="header_box">
-                    <a href="#">Blog</a>
-                </div>
-                <div class="header_box">
-                    <a href="#">Contact</a>
-                </div>
-            </header>
-            <div class="hero">
-                <div id="main_canvas">
-                    <canvas id="canvas" width="60%" height="100%"></canvas>
-                </div>
-                    <div class="herod">
-                        <h1 class="heroMessage">プログラムで世界を創る<br>Programming the World</h1>
-                    </div>
-                    
+            <div class="headerBox">
+                <a class="headerLink" href="#">Blog</a>
+            </div>
+            <div class="headerBox">
+                <a class="headerLink" href="#">Contact</a>
+            </div>
+        </header>
+        <div class="hero">
+            <div id="mainCanvas">
+                <canvas id="canvas" width="60%" height="100%"></canvas>
+            </div>
+            <div class="herod">
+                <h1 class="heroMessage">世界をプログラムする<br />Programming the World</h1>
             </div>
         </div>
     </body>

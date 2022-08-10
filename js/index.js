@@ -7,12 +7,10 @@ function init() {
         alpha: true,
     });
     // ウィンドウサイズ設定
-    width = document.getElementById('main_canvas').getBoundingClientRect().width;
-    height = document.getElementById('main_canvas').getBoundingClientRect().height;
+    width = document.getElementById('mainCanvas').getBoundingClientRect().width;
+    height = document.getElementById('mainCanvas').getBoundingClientRect().height;
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(width, height);
-    console.log(window.devicePixelRatio);
-    console.log(width + ", " + height);
 
     // シーンを作成
     const scene = new THREE.Scene();
@@ -25,7 +23,7 @@ function init() {
 
     // Load GLTF or GLB
     const loader = new THREE.GLTFLoader();
-    const url = '3d/reimeiEarth02.glb';
+    const url = '3d/reimeiEarth.glb';
 
     // window size
     const w_height = window.innerHeight;
@@ -41,10 +39,6 @@ function init() {
 
             // model["test"] = 100;
         },
-        function (error) {
-            console.log('An error happened');
-            console.log(error);
-        }
     );
     renderer.gammaOutput = true;
     renderer.gammaFactor = 2.2;
@@ -68,10 +62,27 @@ function init() {
     function tick() {
         controls.update();
 
-        if (model != null) {
-            console.log(model);
-        }
         renderer.render(scene, camera);
         requestAnimationFrame(tick);
     }
 }
+
+    function animate() {
+        // window.requestAnimationFrame:再描画のタイミングで指定した関数が呼び出される
+        // https://developer.mozilla.org/ja/docs/Web/API/Window/requestAnimationFrame
+        requestAnimationFrame( animate );
+        render();
+    }
+
+    function render() {
+
+        model.rotation.x += 0.01;	// x軸方向に回転
+        model.rotation.y += 0.01;	// y軸方向に回転
+        model.rotation.z += 0.01;	// z軸方向に回転
+
+
+        // 再描画
+        renderer.render(scene, camera); 
+
+    }
+
