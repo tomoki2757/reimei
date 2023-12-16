@@ -1,89 +1,78 @@
 html,
 body {
-    height: 100vh;
-    background-color:  rgba(3, 7, 18, 1);
-    color: white;
-    text-align: center;
-
+  height: 100vh;
+  background-color: rgba(3, 7, 18, 1);
+  color: white;
+  text-align: center;
+    font-family: "Noto Sans JP", "sans-serif";
 }
-
-.headerLogo {
-    text-align: center;
-}
+@font-face {
+    src: url("../resources/fonts/NotoSansJP-Regular.woff") format("woff");
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-display: swap;
+  }
 
 .logoimg {
-    width: 90%;
-    margin: auto;
-    height: auto;
+  width: 90%;
+  margin: auto;
+  height: auto;
 }
 
 header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 15vw;
-    width: 100%;
-    font-family: "ColfaxAI", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vw;
+  width: 100%;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .headerLink {
-    font-size: 4vw;
-    width: 100%;
-    text-decoration: none;
-    color: white;
+  font-size: 4vw;
+  width: 100%;
+  text-decoration: none;
+  color: white;
 }
 
 #mainCanvas {
-    height: 35vh;
+  height: 35vh;
 }
 
 .heroMessage {
-    font-family: sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    color: white;
-    font-size: 4vw;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 4vw;
 }
 
 .herod {
-    text-align: center;
+  text-align: center;
 }
 
-.white{
-    color: white;
-    text-align: center;
-    font-size: large;
-}
 
 @media screen and (min-width: 768px) {
-    .headerLogo {
-        text-align: center;
-    }
 
-    .logoimg {
-        width: auto;
-        height: 10vh;
-        margin: auto;
-    }
+  .logoimg {
+    width: auto;
+    height: 10vh;
+    margin: auto;
+  }
 
-    header {
-        height: 5vw;
-    }
-    
-    .headerLink {
-        font-size: 2vw;
-        width: 100%;
-        text-decoration: none;
-        color: white;
-    }
-    #mainCanvas {
-        height: 55vh;
-        background-color: rgba(3, 7, 18, 1);
-    }
-    
-    .herod{
-        height: 13vh;
-    }
+  header {
+    height: 5vw;
+  }
+
+  .headerLink {
+    font-size: 2vw;
+    width: 100%;
+    text-decoration: none;
+  }
+  #mainCanvas {
+    height: 55vh;
+  }
+
+  .herod {
+    height: 13vh;
+  }
 }
