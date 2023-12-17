@@ -23,6 +23,7 @@ h1 {
   }
 
   p {
+    font-size: 1.5rem;
     color: gray;
     margin: 1rem;
     font-weight: 700;
@@ -73,15 +74,18 @@ font-size: 2rem;
 }
 
 
-
 #hero {
   background-color: rgba(3, 7, 18, 1);
   border-radius: 30px;
   padding: 1rem;
 }
 
+.heroSpan {
+    font-family: 'Times New Roman', Times, serif;
+  font-size: 13rem;
+  font-style: inherit;
+}
 .heroSection {
-  background-image: url("../resources/images/hero.png");
   background-size: 80%;
 }
 
