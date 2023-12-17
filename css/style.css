@@ -1,18 +1,11 @@
 html,
 body {
-  background: linear-gradient(to left bottom, rgba(65, 61, 61, 0.5), rgba(3, 7, 18, 1));
+  background-color: rgba(3, 7, 18, 1);
   color: white;
-  text-align: center;
-  font-family: "Noto Sans JP", "sans-serif";
+  font-family: "-apple-system,BlinkMacSystemFont,", "sans-serif";
 }
 :target {
-    scroll-margin-top: 10vw;
-}
-@font-face {
-  src: url("../resources/fonts/NotoSansJP-Regular.woff") format("woff");
-  font-family: "Noto Sans JP";
-  font-style: normal;
-  font-display: swap;
+  scroll-margin-top: 10vw;
 }
 a[href^="mailto:"] {
   color: inherit; /* リンクの色を親要素と同じにする */
@@ -32,8 +25,7 @@ header {
   align-items: center;
   height: 10vw;
   width: 100%;
-  font-weight: 500;
-  font-style: normal;
+  font-weight: 700;
   position: fixed; /* ヘッダーを固定 */
   top: 0; /* ビューポートの上端から0の位置に */
   left: 0; /* ビューポートの左端から0の位置に */
@@ -41,7 +33,7 @@ header {
 }
 
 .headerLink {
-  font-size: 4vw;
+font-size: 2rem;
   width: 100%;
   text-decoration: none;
   color: white;
@@ -55,32 +47,55 @@ header {
   height: 100vh;
   width: 90%;
   display: flex;
-  justify-content: center;
   align-items: center;
   margin: auto;
+  border-top-style: solid;
+  border-top-width: 1px;
 }
 
-.description {
-  width: 100%;
-  font-size: 2rem;
-  line-height: 3rem;
+h1 {
+  font-size: 5rem;
+  margin: 1rem;
 }
 
-#contact  {
-  padding-bottom: 30px;
+#hero {
+  background-color: rgba(3, 7, 18, 1);
+  border-radius: 30px;
 }
 
-@media screen and (min-width: 768px) {
+.heroSection {
+  background-image: url("../resources/images/hero.png");
+  background-size: 80%;
+}
+
+#about {
+  margin: 1rem;
+  background-color: rgba(3, 7, 18, 1);
+}
+#works {
+  margin: 1rem;
+  background-color: rgba(3, 7, 18, 1);
+}
+#contact {
+  margin: 1rem;
+  background-color: rgba(3, 7, 18, 1);
+}
+.contactSection {
+  height: 40vw;
+}
+@media screen and (max-width: 768px) {
   header {
     height: 10vw;
   }
 
   .headerLink {
-    font-size: 2vw;
-    width: 100%;
-    text-decoration: none;
+    font-size: 1rem;
   }
-  #mainCanvas {
+  /* #mainCanvas {
     height: 55vh;
+  } */
+
+  h1 {
+    font-size: 4rem;
   }
 }
