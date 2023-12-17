@@ -5,6 +5,7 @@ body {
   color: white;
   text-align: center;
   font-family: "Noto Sans JP", "sans-serif";
+  word-break: auto-phrase;
 }
 @font-face {
   src: url("../resources/fonts/NotoSansJP-Regular.woff") format("woff");
@@ -46,17 +47,17 @@ header {
 
 .section {
   height: 100vh;
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
-.discription{
-    width: 80%;
-    margin: auto;
-    font-size: 1.5vw;
-    line-height: 2.5vw;
+.description{
+    width: 100%;
+    font-size: 5vw;
+    line-height: 7vw;
 }
 
 @media screen and (min-width: 768px) {
