@@ -1,30 +1,60 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>REIMEI</title>
-        <link rel="stylesheet" href="css/normalize.css" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-    </head>
-    <body>
-        <div class="headerLogo">
-            <a href="/"><img src="img/reimeiLogoWhite.png" alt="" class="logoimg" /></a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REIMEI</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+      <header>
+    <div class="headerLogo">
+      <a href="/"
+        ><img src="img/reimeiLogoWhite.png" alt="" class="logoimg"
+      /></a>
+    </div>
+      <div class="headerBox">
+        <a class="headerLink" href="#about">About</a>
+      </div>
+      <div class="headerBox">
+        <a class="headerLink" href="#works">Works</a>
+      </div>
+      <div class="headerBox">
+        <a class="headerLink" href="#contact">Contact</a>
+      </div>
+    </header>
+    <main>
+      <div class="section">
+        <div id="hero"><h1>AIで世界をより良い場所に</h1></div>
+      </div>
+      <div class="section">
+        <div id="about">
+          <h2>About</h2>
+          <p class="discription">
+            REIMEIはAIの力で世界をより良い場所にすることを目的としています。
+            <br />
+            近年AI技術は急速に進歩していますが､広く社会に浸透しているとは言い難い状況です｡
+            <br />
+            REIMEIはAI技術をより多くの人に役立てるために､AI技術の研究開発､及び社会実装を行っています｡
+            <br />
+
+            大規模言語モデルや､画像生成､音声認識などのAI技術を用いて人類の課題を解決します｡
+          </p>
         </div>
-        <header>
-            <div class="headerBox">
-                <a class="headerLink" href="/about.html">About</a>
-            </div>
-            <div class="headerBox">
-                <a class="headerLink" href="/works.html">Works</a>
-            </div>
-            <div class="headerBox">
-                <a class="headerLink" href="/contact.html">Contact</a>
-            </div>
-        </header>
-        <div class="hero">
-            <div class="herod">
-            </div>
+      </div>
+      <div class="section">
+        <div id="works">
+          <h2>Works</h2>
+          <div class="herod"></div>
         </div>
-    </body>
+      </div>
+      <div class="section">
+        <div id="contact">
+          <h2>Contact</h2>
+          <a href="mailto:info@reimei.com">contact@reimei.com</a>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

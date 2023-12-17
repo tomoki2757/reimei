@@ -4,17 +4,21 @@ body {
   background-color: rgba(3, 7, 18, 1);
   color: white;
   text-align: center;
-    font-family: "Noto Sans JP", "sans-serif";
+  font-family: "Noto Sans JP", "sans-serif";
 }
 @font-face {
-    src: url("../resources/fonts/NotoSansJP-Regular.woff") format("woff");
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-display: swap;
-  }
+  src: url("../resources/fonts/NotoSansJP-Regular.woff") format("woff");
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-display: swap;
+}
+a[href^="mailto:"] {
+  color: inherit; /* リンクの色を親要素と同じにする */
+  text-decoration: none; /* 下線を消す */
+}
 
 .logoimg {
-  width: 90%;
+  width: 20vw;
   margin: auto;
   height: auto;
 }
@@ -23,9 +27,9 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 15vw;
+  height: 5vw;
   width: 100%;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -36,31 +40,29 @@ header {
   color: white;
 }
 
-#mainCanvas {
+/* #mainCanvas {
   height: 35vh;
+} */
+
+.section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.heroMessage {
-  font-weight: 200;
-  font-style: normal;
-  font-size: 4vw;
+.discription{
+    width: 80%;
+    margin: auto;
+    font-size: 1.5vw;
+    line-height: 2.5vw;
 }
-
-.herod {
-  text-align: center;
-}
-
 
 @media screen and (min-width: 768px) {
 
-  .logoimg {
-    width: auto;
-    height: 10vh;
-    margin: auto;
-  }
-
   header {
-    height: 5vw;
+    height: 10vw;
   }
 
   .headerLink {
@@ -70,9 +72,5 @@ header {
   }
   #mainCanvas {
     height: 55vh;
-  }
-
-  .herod {
-    height: 13vh;
   }
 }
