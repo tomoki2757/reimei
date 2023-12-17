@@ -2,15 +2,12 @@ html,
 body {
   background-color: rgba(3, 7, 18, 1);
   color: white;
-  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "Osaka", "MS PGothic", sans-serif;
-
+  font-family: "Noto Sans JP", sans-serif;
 }
 @font-face {
-    src: url("../resources/fonts/NotoSansJP-Regular.woff") format("woff");
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-display: swap;
-  }
+  font-family: "Noto Sans JP";
+  src: url("../resources/fonts/NotoSansJP-Regular.woff")  format("woff");
+}
 :target {
   scroll-margin-top: 10vw;
 }
@@ -19,20 +16,20 @@ a[href^="mailto:"] {
   text-decoration: none; /* 下線を消す */
 }
 h1 {
-    font-size: 5rem;
-    margin: 1rem;
-  }
+  font-size: 5rem;
+  margin: 1rem;
+}
 
-  p {
-    font-size: 1.5rem;
-    color: gray;
-    margin: 1rem;
-    font-weight: 700;
-  }
+p {
+  font-size: 1.5rem;
+  color: gray;
+  margin: 1rem;
+  font-weight: 700;
+}
 
-  .sp{
-    display: none;
-  }
+.sp {
+  display: none;
+}
 .logoImg {
   width: 25vw;
   margin: auto;
@@ -54,7 +51,7 @@ header {
 }
 
 .headerLink {
-font-size: 2rem;
+  font-size: 2rem;
   width: 100%;
   text-decoration: none;
   color: white;
@@ -74,7 +71,6 @@ font-size: 2rem;
   border-top-width: 1px;
 }
 
-
 #hero {
   background-color: rgba(3, 7, 18, 1);
   border-radius: 30px;
@@ -82,7 +78,7 @@ font-size: 2rem;
 }
 
 .heroSpan {
-    font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 13rem;
   font-style: inherit;
 }
@@ -110,7 +106,7 @@ font-size: 2rem;
     height: 10vw;
   }
 
-  .sp{
+  .sp {
     display: block;
   }
 
