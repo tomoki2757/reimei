@@ -2,7 +2,8 @@ html,
 body {
   background-color: rgba(3, 7, 18, 1);
   color: white;
-  font-family: "Noto Sans JP", "sans-serif";
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "Osaka", "MS PGothic", sans-serif;
+
 }
 @font-face {
     src: url("../resources/fonts/NotoSansJP-Regular.woff") format("woff");
@@ -107,6 +108,10 @@ font-size: 2rem;
 @media screen and (max-width: 768px) {
   header {
     height: 10vw;
+  }
+
+  .sp{
+    display: block;
   }
 
   .headerLink {
