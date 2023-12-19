@@ -17,6 +17,19 @@ h1 {
   font-size: 5rem;
   margin: 1rem;
 }
+header {
+  display: flex;
+  background-color: rgba(3, 7, 18, 1);
+  justify-content: space-around;
+  align-items: center;
+  height: 10vw;
+  width: 100%;
+  font-weight: 700;
+  position: fixed; /* ヘッダーを固定 */
+  top: 0; /* ビューポートの上端から0の位置に */
+  left: 0; /* ビューポートの左端から0の位置に */
+  z-index: 1000; /* 他の要素より前面に表示 */
+}
 
 p {
   font-size: 1.5rem;
@@ -34,19 +47,6 @@ p {
   height: auto;
 }
 
-header {
-  display: flex;
-  background-color: rgba(3, 7, 18, 1);
-  justify-content: space-around;
-  align-items: center;
-  height: 10vw;
-  width: 100%;
-  font-weight: 700;
-  position: fixed; /* ヘッダーを固定 */
-  top: 0; /* ビューポートの上端から0の位置に */
-  left: 0; /* ビューポートの左端から0の位置に */
-  z-index: 1000; /* 他の要素より前面に表示 */
-}
 
 .headerLink {
   font-size: 2rem;
@@ -65,14 +65,13 @@ header {
   border-top-style: solid;
   border-top-width: 1px;
 }
-
+#hero {
+  padding: 1rem;
+}
 .heroSpan {
   font-family: "Times New Roman", Times, serif;
   font-size: 13rem;
   font-style: normal;
-}
-.heroSection {
-  background-size: 80%;
 }
 
 #about {
@@ -110,8 +109,5 @@ header {
     font-size: 4rem;
   }
 
-  .heroSection {
-    display: flex;
-    justify-content: center;
-  }
+
 }
