@@ -2,22 +2,18 @@ html,
 body {
   background-color: rgba(3, 7, 18, 1);
   color: white;
-  font-family: "Helvetica Neue",
-  Arial,
-  "Hiragino Kaku Gothic ProN",
-  "Hiragino Sans",
-  Meiryo,
-  sans-serif;
+  font-family:  system-ui,sans-serif;
 }
 
 :target {
   scroll-margin-top: 10vw;
 }
-a[href^="mailto:"] {
+a{
   color: inherit; /* リンクの色を親要素と同じにする */
   text-decoration: none; /* 下線を消す */
 }
 h1 {
+  font-family: "Hiragino Mincho Pro", "MS PMincho", "MS Mincho", serif;
   font-size: 5rem;
   margin: 1rem;
 }
@@ -54,9 +50,6 @@ header {
 
 .headerLink {
   font-size: 2rem;
-  width: 100%;
-  text-decoration: none;
-  color: white;
 }
 
 /* #mainCanvas {
@@ -73,16 +66,10 @@ header {
   border-top-width: 1px;
 }
 
-#hero {
-  background-color: rgba(3, 7, 18, 1);
-  border-radius: 30px;
-  padding: 1rem;
-}
-
 .heroSpan {
   font-family: "Times New Roman", Times, serif;
   font-size: 13rem;
-  font-style: inherit;
+  font-style: normal;
 }
 .heroSection {
   background-size: 80%;
@@ -121,5 +108,10 @@ header {
 
   h1 {
     font-size: 4rem;
+  }
+
+  .heroSection {
+    display: flex;
+    justify-content: center;
   }
 }
