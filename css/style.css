@@ -89,6 +89,10 @@ p {
 .contactSection {
   height: 40vw;
 }
+
+.page{
+  margin-top: 150px;
+}
 @media screen and (max-width: 768px) {
   header {
     height: 10vw;
